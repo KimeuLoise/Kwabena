@@ -25,5 +25,7 @@ function findDayOfTheWeek(d){
  else {
      nDayBorn=nDay;
  };
-
  alert(nDayBorn);
+
+ var weekDay = ["Monday" , "Teusday" , "Wednesday" , "Thursday" , "Friday" , "Saturday" , "Sunday"]
+ alert(weekDay[nDayBorn]);
