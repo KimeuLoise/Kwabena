@@ -10,8 +10,20 @@ var month = parseInt(monthOfBirth);
 var date = parseInt(dateOfBirth);
 alert([century] + [year]);
 
-function findDayOfTheWeek(w) {
-    day = ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date ) %7
-    return(day)
-}
-alert(findDayOfTheWeek())
+function findDayOfTheWeek(d){
+    dayOfBirth = ( ( (([century]/4) -2)*([century]-1)) + ((5*[year]/4) ) + ((26*([month]+1)/10)) + [date] )%7;
+    return(dayOfBirth);
+ }
+ alert(findDayOfTheWeek());
+
+ var nDay = Math.trunc(dayOfBirth);
+ alert(nDay);
+
+ if (nDay>=3) {
+     nDayBorn= nDay -2;
+ }
+ else {
+     nDayBorn=nDay;
+ };
+
+ alert(nDayBorn);
