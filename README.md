@@ -1,6 +1,6 @@
 # Kwabena
 
-My Ghanaian name and day of birth as on date 23-08-2020,
+My Ghanian name and day of birth as on date 23-08-2020,
 By Kimeu Loise
 
 Description
