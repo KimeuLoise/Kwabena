@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="javascript" href="js/script.js">
     <title>Birth-Details Calculator</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/script.js"></script>
 </head>
 <body id="Home">
     <!--Navbar-->
       <nav id="navbar">
-          <img src="blur-colored-texture_1160-889.jpg" alt="background image">
         <h2><a href="Home"><span class="text-primary">Birth-Details</span>Calculator</a></h2>
            <p>This web application takes your birth details in form of day,month,year and week. It does the calculation and give you your Akan name according to the day of the week you were born.</p>
       </nav>
-    <div class="login-page">
-        <div class="form">
-            <form class="findDayOfTheWeek"></form>
-            <p>Find Day Of The Week</p>
-                <input type="text" placeholder="Kindly enter birth date"/>
-                <input type="text" placeholder="Kindly enter birth month"/>
-                <input type="text" placeholder="Kindly enter birth year"/>
-                <input type="text" placeholder="Kindly enter the gender you were assigned at birth"/>
-                <button>Click Here</button>
-            </form>
-        </div>
-    </div>
-    <script src="js/script.js"></script>
+      <div class="container">
+        <h1>Akan Ghanian names</h1>
+        <h3>The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person</h3>
+        <form>
+            <div>
+                <p id="output"></p>
+                <label>Enter Your first Name.</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter" required>
+                <label>Year of Birth</label>
+                <input type="number" class="form-control" id="year" placeholder="Enter the year." required min="1955"
+                    max="2030">
+                <label>Month of Birth</label>
+                <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1"
+                    max="12">
+                <label>Day of Birth</label>
+                <input type="number" class="form-control" id="day" placeholder="Enter the day" required min="1"
+                    max="31">
+            </div>
+            <div class="gender">
+                <label>Gender</label><br>
+                <input type="radio" name="gender" id="male" value="male" checked> Male
+                <input type="radio" name="gender" id="female" value="female"> Female
+            </div>
+            <a onclick="submission()" class="btn btn-outline-info btn-lg">Submit</a>
+            <button type="reset" class="btn btn-outline-info btn-lg">Restart</button>
+        </form>
+   
 </body>
 </html>
